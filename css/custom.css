@@ -132,6 +132,10 @@ img {
   display: block;
 }
 
+label{
+  color: white;
+}
+
 .boxes {
   margin: 0 auto;
   max-width: 1200px;
@@ -148,6 +152,7 @@ img {
 
 .contact{
 	text-align: left;
+  color: white;
 }
 
 /*foundation.css for button, .float-left & .float-center*/

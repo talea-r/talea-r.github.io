@@ -3,9 +3,6 @@ body{
   margin: 0;
 }
 
-header{
-	
-}
 
 h1{
     font-size: 48px;
@@ -13,12 +10,6 @@ h1{
 
 }
 
-/*foundation.css*/
-hr {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-  height: 0;
-  overflow: visible; }
 
 h2{
   color: white;
@@ -29,10 +20,7 @@ p{
   color: white;
 }
 
-/*foundation.css*/
-a {
-  background-color: transparent; }
-
+/*foundation.css for img & a*/
 
 .main{
   background-color: black;
@@ -112,7 +100,7 @@ a {
 .dropdown:hover .dropdown-content {
   display: block;
 }
- 
+
  /*Photo*/
  .cards{
   display: grid;
@@ -161,6 +149,8 @@ img {
 .contact{
 	text-align: left;
 }
+
+/*foundation.css for button, .float-left & .float-center*/
 
 /*video*/
 

@@ -1,4 +1,4 @@
-body{
+ body{
   background: url(http://digital.bnint.com/filelib/s9/photos/white_wood_4500x3000_lo_res.jpg);
 
 }
@@ -116,31 +116,9 @@ p{
    .card:hover {
     transform: scale(1.5);
    }
-    
-   
-   .boxes {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(3,1fr);
-  grid-template-rows: 200px 200px;
-}
-
-.box:nth-child(1) {
-  grid-column-start: 2;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 3;
-}
-
-/*  Short hand
-
-  grid-column: 2 / 4;
-  grid-row: 1 / 3;
-
-*/
 
 
-
+/*contact*/
 
 html {
   box-sizing: border-box;
@@ -182,3 +160,41 @@ img {
 	text-align: left;
 }
 
+/*video*/
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
+  grid-auto-rows: 550px;
+  justify-content: center;
+  align-items: stretch;
+  grid-gap: 20px;
+  align-content: center;
+  text-align: center;
+}
+
+.description{
+   font-family: Verdana;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.29;
+  letter-spacing: 0.1px;
+  text-align: left;
+  color: black;
+  padding: 10px 0px 10px 10px;
+  border-top: 1px solid #4a4a4a;
+}
+
+.video{
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
+  background-color: grey;
+}
+
+/*About*/
+
+.me{
+  height: 25%;
+  width: 50%;
+  float: left;
+
+}

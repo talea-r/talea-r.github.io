@@ -13,6 +13,13 @@ h1{
 
 }
 
+/*foundation.css*/
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  height: 0;
+  overflow: visible; }
+
 h2{
   color: white;
 }
@@ -21,6 +28,11 @@ p{
   font-size: 24px;
   color: white;
 }
+
+/*foundation.css*/
+a {
+  background-color: transparent; }
+
 
 .main{
   background-color: black;
@@ -127,21 +139,6 @@ p{
 
 /*contact*/
 
-/*html {
-  box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
-body {
-  font: 1em/1.4 Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif, white;
-  background-color: #fafafa;
-}*/
-
 img {
   max-width: 100%;
   display: block;
@@ -151,8 +148,6 @@ img {
   margin: 0 auto;
   max-width: 1200px;
 }
-
-
 
 .box:nth-child(odd) {
   background-color: #233F78;
@@ -178,6 +173,7 @@ img {
   grid-gap: 20px;
   align-content: center;
   text-align: center;
+  margin: 20px;
 }
 
 .description{
@@ -194,7 +190,7 @@ img {
 
 .video{
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
-  background-color: #595959;
+  background-color: #393939;
 }
 
 /*About*/

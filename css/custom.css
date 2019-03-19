@@ -1,6 +1,6 @@
- body{
-  background: url(http://digital.bnint.com/filelib/s9/photos/white_wood_4500x3000_lo_res.jpg);
-
+body{
+  background-color: black;
+  margin: 0;
 }
 
 header{
@@ -9,16 +9,23 @@ header{
 
 h1{
     font-size: 48px;
+    color: white;
 
+}
+
+h2{
+  color: white;
 }
 
 p{
   font-size: 24px;
+  color: white;
 }
 
 .main{
+  background-color: black;
 	font-family: verdana;
-	color: black;
+	color: white;
 	text-align: center;
 	margin: 10px;
 
@@ -114,13 +121,13 @@ p{
    }
 
    .card:hover {
-    transform: scale(1.5);
+    transform: scale(1.25);
    }
 
 
 /*contact*/
 
-html {
+/*html {
   box-sizing: border-box;
 }
 
@@ -133,7 +140,7 @@ html {
 body {
   font: 1em/1.4 Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif, white;
   background-color: #fafafa;
-}
+}*/
 
 img {
   max-width: 100%;
@@ -180,14 +187,14 @@ img {
   line-height: 1.29;
   letter-spacing: 0.1px;
   text-align: left;
-  color: black;
+  color: white;
   padding: 10px 0px 10px 10px;
   border-top: 1px solid #4a4a4a;
 }
 
 .video{
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
-  background-color: grey;
+  background-color: #595959;
 }
 
 /*About*/

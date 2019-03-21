@@ -28,7 +28,6 @@ p{
 	color: white;
 	text-align: center;
 	margin: 10px;
-
 }
 
 /* Navbar container */
@@ -101,6 +100,12 @@ p{
   display: block;
 }
 
+ /*Home*/
+ 
+ .name{
+  margin: 3em;
+ }
+ 
  /*Photo*/
  .cards{
   display: grid;

@@ -1,0 +1,30 @@
+body{
+  background: url(https://media1.giphy.com/media/Ph0oIVQeuvh0k/giphy.gif?cid=3640f6095c92b2f75578306c32d0e4e3);
+  
+  margin: 0;
+}
+
+
+h1{
+    font-size: 48px;
+    color: white;
+
+}
+
+
+h2{
+  color: white;
+}
+
+p{
+  font-size: 24px;
+  color: white;
+}
+
+.main{
+  background-color: black;
+	font-family: verdana;
+	color: white;
+	text-align: center;
+	margin: 10px;
+}

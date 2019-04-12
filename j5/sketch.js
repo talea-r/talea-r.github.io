@@ -12,7 +12,7 @@ function setup() {
 }
 
 function draw() {
-  background(102);
+  background(0,0,0,0);
   e1.update(mouseX, mouseY);
   e2.update(mouseX, mouseY);
   e3.update(mouseX, mouseY);
@@ -37,7 +37,7 @@ function Eye(tx, ty, ts) {
     fill(255);
     ellipse(0, 0, this.size, this.size);
     rotate(this.angle);
-    fill(190, 20, 29);
+    fill(0);
     ellipse(this.size / 4, 0, this.size / 2, this.size / 2);
     pop();
   };

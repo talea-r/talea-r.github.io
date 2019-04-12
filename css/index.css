@@ -101,3 +101,18 @@ p{
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+.name{
+  width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.print{
+  height: 60%;
+  width: 35%;
+  position: absolute;
+  top: 40%;
+  right: 10%;
+  }

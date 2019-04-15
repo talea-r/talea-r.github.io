@@ -30,6 +30,21 @@ p{
 	
 }
 
+.hair{
+	display: grid;
+  grid-gap: 20px;
+  /*Grid tracks*/
+  grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
+  grid-auto-rows: 250px;
+  margin: 10%;
+}
+
+  .hair img {
+   	object-fit: cover;
+   	width: 100%;
+   	/*height: 250px;*/
+   }
+
 .buttons{
 	border: none;
 	margin: 30px;

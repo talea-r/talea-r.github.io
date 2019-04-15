@@ -116,3 +116,7 @@ p{
   top: 40%;
   right: 10%;
   }
+
+  #hidden{
+    color: rgba(0,0,0,0);
+  }

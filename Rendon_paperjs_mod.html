@@ -1,17 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.dom.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.sound.min.js"></script>
-	<!-- <link rel="stylesheet" type="text/css" href="foundation-6/css/foundation.css" />
-	<link rel="stylesheet" type="text/css" href="css/custom.css" /> -->
+<!-- Load the Paper.js library -->
+<script type="text/javascript" src="js/paper.js"></script>
+<!-- Define inlined PaperScript associate it with myCanvas -->
+<script type="text/paperscript" canvas="myCanvas">
+	// The amount of points in the path:
+var points = 9;
+
+// The distance between the points:
+var length = 100;
+
+var path = new Path({
+	strokeColor: '#C05392',
+	strokeWidth: 5,
+	strokeCap: 'round'
+});
+
+var start = view.center / [10, 1];
+for (var i = 0; i < points; i++)
+	path.add(start + new Point(i * length, 0));
+
+function onMouseMove(event) {
+	path.firstSegment.point = event.point;
+	for (var i = 0; i < points - 1; i++) {
+		var segment = path.segments[i];
+		var nextSegment = segment.next;
+		var vector = segment.point - nextSegment.point;
+		vector.length = length;
+		nextSegment.point = segment.point - vector;
+	}
+	path.smooth({ type: 'continuous' });
+}
+
+function onMouseDown(event) {
+	path.fullySelected = true;
+	path.strokeColor = '#041499';
+}
+
+function onMouseUp(event) {
+	path.fullySelected = false;
+	path.strokeColor = '#C05392';
+}
+
+
+</script>
 </head>
 <body>
-	<p>Click <a href="http://paperjs.org/examples/chain/">here</a> to see the original sketch.</p>
-
-	<script src="j5/ws3.js"></script>
-
+	<canvas id="myCanvas" resize></canvas>
 </body>
 </html>

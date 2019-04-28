@@ -1,15 +1,12 @@
-// Adapted from the following Processing example:
-// http://processing.org/learning/topics/follow3.html
-
 // The amount of points in the path:
-var points = 10;
+var points = 9;
 
 // The distance between the points:
-var length = 70;
+var length = 100;
 
 var path = new Path({
 	strokeColor: '#C05392',
-	strokeWidth: 10,
+	strokeWidth: 5,
 	strokeCap: 'round'
 });
 

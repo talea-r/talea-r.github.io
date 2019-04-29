@@ -9,7 +9,7 @@ function preload() {
 function setup() {
   createCanvas(900, 600);
   song.loop(); // song is ready to play during setup() because it was loaded during preload
-  background(0, 0, 0, 0);
+  background(4, 0, 0, 50);
 }
 
 function mousePressed() {

@@ -7,7 +7,8 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(1100, 700);
+  createCanvas(windowWidth, windowHeight);
+  background(255, 0, 200)
   song.loop(); // song is ready to play during setup() because it was loaded during preload
   noCursor();
 }
@@ -20,7 +21,7 @@ function draw() {
   line(50, -50, -50, 50);
   line(25, -25, -25, 25);
   line(-25, -25, 25, 25);
-  angle++;
+  angle+= 3;
 }
 
 function mousePressed() {

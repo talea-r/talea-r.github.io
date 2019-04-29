@@ -1,24 +1,14 @@
-var angle = 0;
 
 let song;
 
 function preload() {
-  song = loadSound('../art75/music/music.mp3');
+  song = loadSound('music/music.mp3');
 }
 
 function setup() {
-  createCanvas(900, 600);
+  createCanvas(1, 1);
   song.loop(); // song is ready to play during setup() because it was loaded during preload
-  fill(0);
-}
-
-function draw() {
-	background(255);
-	translate(mouseX, mouseY);
-	rotate(radians(angle));
-	line(-50, -50, 50, 50);
-	line(50, -50, -50, 50);
-	angle++;
+  background(0, 0, 0, 0);
 }
 
 function mousePressed() {

@@ -18,6 +18,8 @@ function draw() {
   rotate(radians(angle));
   line(-50, -50, 50, 50);
   line(50, -50, -50, 50);
+  line(25, -25, -25, 25);
+  line(-25, -25, 25, 25);
   angle++;
 }
 

@@ -15,30 +15,23 @@ function setup() {
 }
 
 function draw() {
-  background(255);
+  background(171, 203, 254);
   translate(mouseX, mouseY);
   rotate(radians(angle));
   line(-50, -50, 50, 50);
   line(50, -50, -50, 50);
-  line(25, -25, -25, 25);
-  line(-25, -25, 25, 25);
   angle+= 3;
 
-  // var l0 = map(mouseX, 0, width, 10, 300);
+    if(mouseX >= 48 && mouseX <=102 && mouseY<= 102 && mouseY >= 48) {
+    fill(0);
+    rectMode(CENTER);
+    rect(75,75,50,50);
+    
+  } else {
+    fill(255)
+    ellipse(75,75,50,50);
+  }
 
-  // background(255);
-
-  // translate(width/2, height/2);
-  // rotate(angle)
-  // for(var i=0; i,5; i++) {
-  //   push();
-  //   rotate(i+TWO_PI/5);
-  //   translate(0, l0);
-  //   ellipse(0, 0, 20, 20);
-  //   pop();
-  // }
-
-  // angle += speed;
 }
 
 function mousePressed() {

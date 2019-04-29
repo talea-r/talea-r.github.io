@@ -1,12 +1,13 @@
 
 let song;
+var angle = 0;
 
 function preload() {
   song = loadSound('music/music.mp3');
 }
 
 function setup() {
-  createCanvas(1, 1);
+  createCanvas(900, 600);
   song.loop(); // song is ready to play during setup() because it was loaded during preload
   background(0, 0, 0, 0);
 }

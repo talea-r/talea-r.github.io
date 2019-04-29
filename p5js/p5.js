@@ -16,11 +16,13 @@ function setup() {
 
 function draw() {
   background(171, 203, 254);
+  push();
   translate(mouseX, mouseY);
   rotate(radians(angle));
   line(-50, -50, 50, 50);
   line(50, -50, -50, 50);
   angle+= 3;
+  pop();
 
     if(mouseX >= 48 && mouseX <=102 && mouseY<= 102 && mouseY >= 48) {
     fill(0);

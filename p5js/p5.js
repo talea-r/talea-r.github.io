@@ -9,7 +9,16 @@ function preload() {
 function setup() {
   createCanvas(900, 600);
   song.loop(); // song is ready to play during setup() because it was loaded during preload
-  fill(53, 0, 12);
+  
+}
+
+function draw() {
+  background(255);
+  translate(mouseX, mouseY);
+  rotate(radians(angle));
+  line(-50, -50, 50, 50);
+  line(50, -50, -50, 50);
+  angle++;
 }
 
 function mousePressed() {

@@ -8,7 +8,7 @@ function preload() {
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  background(255, 0, 200)
+  background(171, 203, 254)
   song.loop(); // song is ready to play during setup() because it was loaded during preload
   noCursor();
 }
@@ -33,4 +33,5 @@ function mousePressed() {
     song.play();
     background(0, 255, 0);
   }
+
 }

@@ -20,8 +20,8 @@ function draw() {
   for(var x =25; x<= width-25; x+=25){
   for(var y =25; y<= height-25; y+=25){
     rotate(radians(angle));
-    line(x-2, y-2, x+2, y+2);
-    line(x+2, y-2, x-2, y+2);
+    line(x-12, y-12, x+2, y+2);
+    line(x+12, y-2, x-2, y+12);
   }
   }
   push();
@@ -36,7 +36,7 @@ function draw() {
   for(var y =75; y<= height-75; y+=75){
 
     if(mouseX >= x-26 && mouseX <= x+26 && mouseY<= y+26 && mouseY >= y-26) {
-    fill(255,228,225);
+    fill(255,182,193);
     rectMode(CENTER);
     rect(x,y,50,50);
     

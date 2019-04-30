@@ -1,10 +1,12 @@
 
 let song;
+let rain;
 var angle = 0;
 // var speed = 0.05;
 
 function preload() {
   song = loadSound('music/music.mp3');
+  rain = loadSound('music/rain.mp3');
 }
 
 function setup() {
@@ -48,12 +50,12 @@ function draw() {
 }
 
 function mousePressed() {
-  if (song.isPlaying()) {
+  if (rain.isPlaying()) {
     // .isPlaying() returns a boolean
-    song.pause(); // .play() will resume from .pause() position
+    rain.pause(); // .play() will resume from .pause() position
     background(255, 0, 0);
   } else {
-    song.play();
+    rain.play();
     background(0, 255, 0);
   }
 

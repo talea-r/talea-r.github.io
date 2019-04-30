@@ -17,13 +17,11 @@ function setup() {
 function draw() {
   background(171, 203, 254);
 
-  push();
   for(var x =25; x<= width-25; x+=25){
   for(var y =25; y<= height-25; y+=25){
     rotate(radians(angle));
-    line(x-3, y-3, x+3, y+3);
-    line(x+3, y-3, x-3, y+3);
-    pop();
+    line(x-2, y-2, x+2, y+2);
+    line(x+2, y-2, x-2, y+2);
   }
   }
   push();

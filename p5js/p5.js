@@ -19,7 +19,6 @@ function draw() {
 
   for(var x =25; x<= width-25; x+=25){
   for(var y =25; y<= height-25; y+=25){
-    rotate(radians(angle));
     line(x-12, y-12, x+2, y+2);
     line(x+12, y-2, x-2, y+12);
   }

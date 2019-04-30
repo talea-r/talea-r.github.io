@@ -35,7 +35,7 @@ function draw() {
   for(var y =75; y<= height-75; y+=75){
 
     if(mouseX >= x-26 && mouseX <= x+26 && mouseY<= y+26 && mouseY >= y-26) {
-    fill(255);
+    fill(255,228,225);
     rectMode(CENTER);
     rect(x,y,50,50);
     

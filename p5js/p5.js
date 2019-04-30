@@ -17,8 +17,8 @@ function setup() {
 function draw() {
   background(171, 203, 254);
 
-  for(var x =25; x<= width-25; x+=25){
-  for(var y =25; y<= height-25; y+=25){
+  for(var x =25; x<= width-25; y+=25){
+  for(var y =25; y<= height-25; x+=25){
     line(x-5, y-5, x+5, y+5);
     line(x+5, y-5, x-5, y+5);
   }

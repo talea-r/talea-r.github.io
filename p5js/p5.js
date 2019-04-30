@@ -16,6 +16,13 @@ function setup() {
 
 function draw() {
   background(171, 203, 254);
+
+  for(var x =25; x<= width-25; x+=25){
+  for(var y =25; y<= height-25; y+=25){
+    line(x-5, y-5, x+5, y+5);
+    line(x+5, y-5, x-5, y+5);
+  }
+  }
   push();
   translate(mouseX, mouseY);
   rotate(radians(angle));
@@ -24,16 +31,20 @@ function draw() {
   angle+= 3;
   pop();
 
-    if(mouseX >= 48 && mouseX <=102 && mouseY<= 102 && mouseY >= 48) {
-    fill(0);
+  for(var x =75; x<= width-75; x+=75){
+  for(var y =75; y<= height-75; y+=75){
+
+    if(mouseX >= x-26 && mouseX <= x+26 && mouseY<= y+26 && mouseY >= y-26) {
+    fill(255);
     rectMode(CENTER);
-    rect(75,75,50,50);
+    rect(x,y,50,50);
     
   } else {
     fill(255)
-    ellipse(75,75,50,50);
+    ellipse(x,y,50,50);
   }
-
+}
+}
 }
 
 function mousePressed() {

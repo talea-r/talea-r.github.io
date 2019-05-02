@@ -11,13 +11,13 @@ function preload() {
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  fill(181, 204, 116);
+  fill(216, 237, 196);
   song.loop(); // song is ready to play during setup() because it was loaded during preload
   noCursor();
 }
 
 function draw() {
-  background(181, 204, 116);
+  background(216, 237, 196);
 
   for(var x =25; x<= width-25; x+=25){
   for(var y =25; y<= height-25; y+=25){

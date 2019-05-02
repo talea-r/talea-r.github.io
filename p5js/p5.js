@@ -17,7 +17,7 @@ function setup() {
 }
 
 function draw() {
-  background(192, 249, 192);
+  background(181, 204, 116);
 
   for(var x =25; x<= width-25; x+=25){
   for(var y =25; y<= height-25; y+=25){

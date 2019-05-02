@@ -17,7 +17,7 @@ function setup() {
 }
 
 function draw() {
-  background(171, 203, 254);
+  background(152,251,152);
 
   for(var x =25; x<= width-25; x+=25){
   for(var y =25; y<= height-25; y+=25){
@@ -37,7 +37,7 @@ function draw() {
   for(var y =75; y<= height-75; y+=75){
 
     if(mouseX >= x-26 && mouseX <= x+26 && mouseY<= y+26 && mouseY >= y-26) {
-    fill(255,182,193);
+    fill(171, 203, 254);
     rectMode(CENTER);
     rect(x,y,50,50);
     

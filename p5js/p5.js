@@ -41,7 +41,7 @@ function draw() {
     fill(171, 203, 254);
     rectMode(CENTER);
     translate(width / 66, height / 66);
-    translate(p5.Vector.fromAngle(millis() / 1000, 40));
+    translate(p5.Vector.fromAngle(millis() / 1200, 70));
     rect(x,y,50,50);
     pop();
     

@@ -37,9 +37,13 @@ function draw() {
   for(var y =75; y<= height-75; y+=75){
 
     if(mouseX >= x-26 && mouseX <= x+26 && mouseY<= y+26 && mouseY >= y-26) {
+    push();
     fill(171, 203, 254);
     rectMode(CENTER);
+    translate(width / 66, height / 66);
+    translate(p5.Vector.fromAngle(millis() / 1000, 40));
     rect(x,y,50,50);
+    pop();
     
   } else {
     fill(255);
@@ -59,4 +63,6 @@ function mousePressed() {
     background(0, 255, 0);
   }
 
+
 }
+
